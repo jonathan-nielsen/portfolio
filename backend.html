@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles/general.css">
+		<link rel="stylesheet" href="./styles/terminal.css">
+		<script src="./scripts/terminal.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<main>
+			<div class="terminal" id="terminal">
+				<div class="terminal-header">
+					<div class="terminal-header-title">Terminal</div>
+					<div class="terminal-header-center">user@localhost: ~/</div>
+					<div class="terminal-header-buttons">
+						<div class="terminal-header-button terminal-header-button-minimize">&mdash;</div>
+						<div class="terminal-header-button terminal-header-button-close">&times;</div>
+					</div>
+				</div>
+				<div class="terminal-body">
+					<div id="terminal-body-content">
+						<div class="terminal-body-title">Welcome to my <strong>Backend</strong></div>
+						<div class="terminal-body-content-line">
+							<span class="terminal-body-content-line-text">Copyright (c) 2024 Jonathan Nielsen</span>
+						</div>
+						<br>
+						<div class="terminal-body-content-line">
+							<span class="terminal-body-content-line-text">Type <strong>help</strong> to see available commands</span>
+						</div>
+						<div class="terminal-body-content-line">
+							<span class="terminal-body-content-line-text">Type <strong>exit</strong> to go back to frontend</span>
+						</div>
+						<br>
+						<div class="terminal-body-content-line">
+							<span class="terminal-body-content-line-prefix">
+								<span class="terminal-body-content-line-prefix-username">user@localhost</span>:<span class="terminal-body-content-line-prefix-path">~/</span> $
+							</span>
+							<span class="terminal-body-content-line-text"><input id="terminal-input"><span id="terminal-caret"></span></input></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

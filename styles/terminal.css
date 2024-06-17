@@ -1,0 +1,108 @@
+main {
+	font-family: monospace;
+	background-color: #171421;
+	width: 100%;
+	height: 100%;
+	color: #D0CFCC;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.terminal {
+	width: 100%;
+	height: 100%;
+}
+
+.terminal .terminal-header {
+	background-color: #353535;
+	padding: 16px 8px;
+	display: flex;
+	align-items: center;
+}
+
+.terminal .terminal-header-title {
+	font-weight: 600;
+}
+
+.terminal .terminal-header-center {
+	flex: 1;
+	text-align: center;
+	font-weight: 600;
+}
+
+.terminal .terminal-header-buttons {
+	display: flex;
+}
+
+.terminal .terminal-header-buttons:hover {
+	cursor: pointer;
+}
+
+.terminal .terminal-header-buttons .terminal-header-button {
+	padding: 0 16px;
+	font-size: 16px;
+}
+
+.terminal .terminal-body {
+	padding: 2px 2px 0;
+}
+
+.terminal .terminal-body-title {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	font-size: 32px;
+}
+
+.terminal .terminal-body-content-line .terminal-body-content-line-prefix .terminal-body-content-line-prefix-username {
+	color: #33DA7A;
+}
+
+.terminal .terminal-body-content-line .terminal-body-content-line-prefix .terminal-body-content-line-prefix-path {
+	color: #2A7BDE;
+}
+
+.terminal .terminal-body-content-line .blue {
+	color: #2A7BDE;
+}
+
+.terminal .terminal-body-content-line .white {
+	color: #D0CFCC;
+}
+
+.terminal #terminal-input {
+	all: unset;
+	width: 400px;
+	position: relative;
+	caret-color: transparent;
+	width: 0;
+}
+
+/* Add a blinking box for terminal input */
+.terminal .terminal-body-content-line-text {
+	position: relative;
+}
+
+#terminal-caret {
+	display: inline-block;
+	width: 1ch;
+	height: 1em;
+	margin-bottom: -2px;
+	margin-left: 1px;
+	background-color: #D0CFCC;
+	animation: blink 1.2s infinite step-end;
+	position: absolute;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

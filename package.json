@@ -1,0 +1,8 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jonathan-nielsen/portfolio.git",
+  "author": "Jonathan Nielsen <jonathan@mowin.se>",
+  "license": "MIT"
+}
